@@ -5,6 +5,7 @@ Code samples from [my blog](http://wojteklukaszuk.com).
 ## Contents
 
 * [PocketRefreshControl](http://wojteklukaszuk.com/blog/2014/07/14/pocket-on-steroids/) 
+* [InstagramHeartView](http://wojteklukaszuk.com/blog/2014/08/24/instagrams-like/)
 
 ## License
 
