@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uB-pa-Hy9" customClass="KenBurnsView" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="y2B-3F-9zK">
+                                <rect key="frame" x="69" y="70" width="182" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ISO-QP-Fyx"/>
+                                    <constraint firstAttribute="width" constant="182" id="n0i-9q-NDi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-2L-pZh">
+                                <rect key="frame" x="12" y="394" width="296" height="46"/>
+                                <color key="backgroundColor" red="0.35686274509803922" green="0.45490196078431372" blue="0.66274509803921566" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Aah-pf-M7N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Register with Facebook" image="img_fb">
+                                    <color key="titleColor" red="0.97239576729999999" green="0.98937153899999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-Xk-Y54">
+                                <rect key="frame" x="12" y="510" width="296" height="46"/>
+                                <color key="backgroundColor" red="0.39215686274509803" green="0.38431372549019605" blue="0.34901960784313724" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="bg2-gE-As5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="0.97239576729999999" green="0.98937153899999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIF-GB-xpj">
+                                <rect key="frame" x="12" y="452" width="296" height="46"/>
+                                <color key="backgroundColor" red="0.39215686274509803" green="0.38431372549019605" blue="0.34901960784313724" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="nnO-z5-vr8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Register with Email">
+                                    <color key="titleColor" red="0.97239576729999999" green="0.98937153899999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6uB-pa-Hy9" secondAttribute="trailing" id="AIF-Jd-sVM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6uB-pa-Hy9" secondAttribute="trailing" id="LlS-fS-AEW"/>
+                            <constraint firstItem="IuF-2L-pZh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="12" id="NqU-mN-0IS"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Nsd-eL-ABa"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="O81-Ps-oRx"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="PdF-gO-qGX"/>
+                            <constraint firstAttribute="trailing" secondItem="Wvb-Xk-Y54" secondAttribute="trailing" constant="12" id="QQi-mT-gUE"/>
+                            <constraint firstAttribute="trailing" secondItem="IuF-2L-pZh" secondAttribute="trailing" constant="12" id="UPZ-ay-IZN"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="top" secondItem="y2B-3F-9zK" secondAttribute="bottom" id="Wpe-oH-boC"/>
+                            <constraint firstItem="Wvb-Xk-Y54" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="12" id="dSQ-KC-L8X"/>
+                            <constraint firstAttribute="trailing" secondItem="fIF-GB-xpj" secondAttribute="trailing" constant="12" id="fJa-3T-Mhi"/>
+                            <constraint firstItem="fIF-GB-xpj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="12" id="gD0-jH-i6k"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6uB-pa-Hy9" secondAttribute="bottom" id="gbI-2S-gWD"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="top" secondItem="y2B-3F-9zK" secondAttribute="bottom" id="k6R-dG-Meg"/>
+                            <constraint firstItem="y2B-3F-9zK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="70" id="llB-82-MgQ"/>
+                            <constraint firstAttribute="centerX" secondItem="y2B-3F-9zK" secondAttribute="centerX" id="lvi-ra-E4Y"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wvb-Xk-Y54" secondAttribute="bottom" constant="12" id="njG-q8-TQi"/>
+                            <constraint firstItem="6uB-pa-Hy9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="t3h-M1-bXf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6uB-pa-Hy9" secondAttribute="bottom" id="wXv-sX-pEU"/>
+                            <constraint firstItem="fIF-GB-xpj" firstAttribute="top" secondItem="IuF-2L-pZh" secondAttribute="bottom" constant="12" id="wZC-sc-1aN"/>
+                            <constraint firstItem="fIF-GB-xpj" firstAttribute="top" secondItem="6uB-pa-Hy9" secondAttribute="bottom" constant="-114" id="x3P-j2-zfd"/>
+                            <constraint firstItem="Wvb-Xk-Y54" firstAttribute="top" secondItem="fIF-GB-xpj" secondAttribute="bottom" constant="12" id="zQT-yN-LzY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LlS-fS-AEW"/>
+                                <exclude reference="Nsd-eL-ABa"/>
+                                <exclude reference="Wpe-oH-boC"/>
+                                <exclude reference="k6R-dG-Meg"/>
+                                <exclude reference="t3h-M1-bXf"/>
+                                <exclude reference="x3P-j2-zfd"/>
+                                <exclude reference="wXv-sX-pEU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="kenBurnsView" destination="6uB-pa-Hy9" id="qSR-Gm-r8j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_fb" width="17" height="17"/>
+        <image name="logo" width="182" height="55"/>
+    </resources>
+</document>
