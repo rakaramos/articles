@@ -6,6 +6,7 @@ Code samples from [my blog](http://wojteklukaszuk.com).
 
 * [PocketRefreshControl](http://wojteklukaszuk.com/blog/2014/07/14/pocket-on-steroids/) 
 * [InstagramHeartView](http://wojteklukaszuk.com/blog/2014/08/24/instagrams-like/)
+* [SpringySlider](http://wojteklukaszuk.com/blog/2014/09/06/springy-slider/)
 
 ## License
 
