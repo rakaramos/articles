@@ -11,13 +11,13 @@ import AVFoundation
 
 class KenBurnsView: UIView
 {
-    private var images: [UIImage] = []
+    private var images: [UIImage?] = []
     private var isLooped: Bool = false
     private var duration: NSTimeInterval = 0
     private var imageIndex: Int = 0
     private var finished: Bool = false
     
-    internal func animateWithImages(images: [UIImage], duration: NSTimeInterval, isLooped: Bool)
+    internal func animateWithImages(images: [UIImage?], duration: NSTimeInterval, isLooped: Bool)
     {
         self.images = images
         self.isLooped = isLooped
@@ -44,7 +44,7 @@ class KenBurnsView: UIView
         var image = self.images[self.imageIndex]
         
         // image size without changing the aspect ratio
-        let size = AVMakeRectWithAspectRatioInsideRect(image.size, self.bounds)
+        let size = AVMakeRectWithAspectRatioInsideRect(image!.size, self.bounds)
         
         // scaled image size
         var imageHeight = size.height * 1.1
@@ -99,7 +99,7 @@ class KenBurnsView: UIView
         
         // create image layer
         var imageLayer = CALayer()
-        imageLayer.contents = image.CGImage
+        imageLayer.contents = image!.CGImage
         imageLayer.anchorPoint = CGPointMake(0, 0)
         imageLayer.bounds = CGRectMake(0, 0, imageWidth, imageHeight)
         imageLayer.position = CGPointMake(originX, originY)
