@@ -23,6 +23,8 @@ class WavyView: UIView
     private let kFadeOutAnimationKey = "fadeOutAnimationKey"
     private let kWavesAnimationKey = "wavesAnimationKey"
     private let kScaleUpAnimationKey = "scaleupAnimationKey"
+    private let kKey = "key"
+    private let kLayer = "layer"
     
     override init(frame: CGRect)
     {
@@ -86,8 +88,10 @@ class WavyView: UIView
             return
         }
         
-        var animation = animations[0]
-        animation.valueForKey("layer").addAnimation(animation, forKey: animation.valueForKey("key") as String)
+        var animation: CAAnimation = animations[0]
+        let key = animation.valueForKey(kKey) as String
+        let layer = animation.valueForKey(kLayer) as CALayer
+        layer.addAnimation(animation, forKey: key)
         self.animations.removeAtIndex(0)
     }
     
@@ -154,8 +158,8 @@ class WavyView: UIView
         animationGroup.removedOnCompletion = false
         animationGroup.fillMode = kCAFillModeForwards
         animationGroup.animations = [opacityAnimation, scaleAnimation]
-        animationGroup.setValue(self, forKey: "layer")
-        animationGroup.setValue(kFadeInAnimationKey, forKey: "key")
+        animationGroup.setValue(self.layer, forKey: kLayer)
+        animationGroup.setValue(kFadeInAnimationKey, forKey: kKey)
 
         return animationGroup
     }
@@ -181,8 +185,8 @@ class WavyView: UIView
         animationGroup.fillMode = kCAFillModeForwards
         animationGroup.animations = [positionXAnimation, positionYAnimation]
         animationGroup.beginTime = CACurrentMediaTime() - 0.05
-        animationGroup.setValue(self.waveLayer, forKey: "layer")
-        animationGroup.setValue(kWavesAnimationKey, forKey: "key")
+        animationGroup.setValue(self.waveLayer, forKey: kLayer)
+        animationGroup.setValue(kWavesAnimationKey, forKey: kKey)
         
         return animationGroup
     }
@@ -196,8 +200,8 @@ class WavyView: UIView
         scaleUpAnimation.delegate = self
         scaleUpAnimation.removedOnCompletion = false
         scaleUpAnimation.fillMode = kCAFillModeForwards
-        scaleUpAnimation.setValue(self, forKey: "layer")
-        scaleUpAnimation.setValue(kScaleUpAnimationKey, forKey: "key")
+        scaleUpAnimation.setValue(self.layer, forKey: kLayer)
+        scaleUpAnimation.setValue(kScaleUpAnimationKey, forKey: kKey)
         
         return scaleUpAnimation
     }
@@ -221,8 +225,8 @@ class WavyView: UIView
         animationGroup.removedOnCompletion = false
         animationGroup.fillMode = kCAFillModeForwards
         animationGroup.animations = [opacityAnimation, scaleAnimation]
-        animationGroup.setValue(self, forKey: "layer")
-        animationGroup.setValue(kFadeOutAnimationKey, forKey: "key")
+        animationGroup.setValue(self.layer, forKey: kLayer)
+        animationGroup.setValue(kFadeOutAnimationKey, forKey: kKey)
 
         return animationGroup
     }
