@@ -60,8 +60,8 @@ class SpringAnimation: CAKeyframeAnimation
             else {
                 // overdamped
                 var ω2: CGFloat = sqrt(β * β - ω0 * ω0)
-
-                value = exp(-β * t) * (x0 * cosh(CGFloat(ω2 * t)) + ((β * x0 + v0) /  ω2) * sinh( ω2 * t))
+                let coshValue: CGFloat = cosh(CGFloat(ω2 * t))
+                value = exp(-β * t) * (x0 * coshValue + ((β * x0 + v0) /  ω2) * sinh( ω2 * t))
             }
             
             values.append(self.toValue - value * (self.toValue - self.fromValue))
